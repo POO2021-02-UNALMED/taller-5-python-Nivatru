@@ -22,19 +22,19 @@ class Anfibio(Animal):
     def setColorPiel(self, colorPiel):
         self._colorPiel = colorPiel
 
-    def getVenenoso(self):
+    def isVenenoso(self):
         return self._venenoso
 
     def setVenenoso(self, venenoso):
         self._venenoso = venenoso
 
     @classmethod
-    def crearRana(cls, nombre, edad, genero, zona):
+    def crearRana(cls, nombre, edad, genero, zona = None):
         rana = Anfibio(nombre, edad, "selva", genero, "rojo", True, zona)
         cls.ranas += 1
 
     @classmethod
-    def crearSalamandra(cls, nombre, edad, genero, zona):
+    def crearSalamandra(cls, nombre, edad, genero, zona = None):
         salamandra = Anfibio(nombre, edad, "selva", genero, "negro y amarillo", False, zona)
         cls.salamandras += 1
 

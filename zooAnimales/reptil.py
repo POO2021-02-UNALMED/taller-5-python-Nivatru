@@ -29,12 +29,12 @@ class Reptil(Animal):
         self._largoCola = largoCola
 
     @classmethod
-    def crearIguana(cls, nombre, edad, genero, zona):
+    def crearIguana(cls, nombre, edad, genero, zona = None):
         iguana = Reptil(nombre, edad, "humedal", genero, "verde", 3, zona)
         cls.iguanas += 1
 
     @classmethod
-    def crearSerpiente(cls, nombre, edad, genero, zona):
+    def crearSerpiente(cls, nombre, edad, genero, zona = None):
         serpiente = Reptil(nombre, edad, "jungla", genero, "blanco", 1, zona)
         cls.serpientes += 1
 

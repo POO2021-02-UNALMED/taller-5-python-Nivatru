@@ -18,7 +18,7 @@ class Mamifero(Animal):
         Mamifero.listado.append(self)
 
 
-    def getPelaje(self):
+    def isPelaje(self):
         return self._pelaje
 
     def setPelaje(self, pelaje):
@@ -31,12 +31,12 @@ class Mamifero(Animal):
         self._patas = patas
 
     @classmethod
-    def crearCaballo(cls, nombre, edad, genero, zona):
+    def crearCaballo(cls, nombre, edad, genero, zona = None):
         caballo = Mamifero(nombre, edad, "pradera", genero, True, 4, zona)
         cls.caballos += 1
 
     @classmethod
-    def crearLeon(cls, nombre, edad, genero, zona):
+    def crearLeon(cls, nombre, edad, genero, zona = None):
         leon = Mamifero(nombre, edad, "selva", genero, True, 4, zona)
         cls.leones += 1
 

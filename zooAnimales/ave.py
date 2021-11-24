@@ -15,19 +15,19 @@ class Ave(Animal):
         self._colorPlumas = colorPlumas
         Ave.listado.append(self)
 
-    def getColorPLumas(self):
+    def getColorPlumas(self):
         return self._colorPlumas
 
     def setColorPlumas(self, colorPlumas):
         self._colorPlumas = colorPlumas
 
     @classmethod
-    def crearHalcon(cls, nombre, edad, genero, zona):
+    def crearHalcon(cls, nombre, edad, genero, zona = None):
         halcon = Ave(nombre, edad, "montanas", genero, "cafe glorioso", zona)
         cls.halcones += 1
 
     @classmethod
-    def crearAguila(cls, nombre, edad, genero, zona):
+    def crearAguila(cls, nombre, edad, genero, zona = None):
         aguila = Ave(nombre, edad, "montanas", genero, "blanco y amarillo", zona)
         cls.aguilas += 1
 
