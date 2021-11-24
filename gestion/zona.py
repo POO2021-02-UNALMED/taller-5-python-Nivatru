@@ -4,7 +4,7 @@ class Zona:
         self._nombre = nombre
         self._zoo = zoo
         if animales is None:
-            self._animales == list()
+            self._animales = list()
         else:
             self._animales = animales
 
